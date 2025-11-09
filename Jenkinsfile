@@ -23,6 +23,13 @@ pipeline
 				bat 'mvn clean'
 			}
 		}	
+		stage('Clean Stage Success')
+		{
+			steps
+			{
+				echo "Clean Success"
+			}
+		}
  		stage('Test Stage')
 		{
 			steps
@@ -36,7 +43,15 @@ pipeline
 			{
 				bat 'mvn install'
 			}
-		}		
+		}	
+		
+		stage('Build Success')
+		{
+			steps
+			{
+				echo "Build Success"
+			}
+		}	
 		
 		
 	}
