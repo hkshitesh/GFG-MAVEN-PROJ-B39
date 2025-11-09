@@ -22,6 +22,11 @@ public class MyCalculator {
 	{
 		return a%b;
 	}
+	
+	public void show()
+	{
+		System.out.println("Prod Branch");
+	}
 
 	public static void main(String[] args) {
 		
@@ -31,5 +36,6 @@ public class MyCalculator {
 		System.out.println("Mul is :"+calc.mul(20, 10));
 		System.out.println("Div is :"+calc.div(20, 10));
 		System.out.println("Mod is :"+calc.mod(20, 10));
+		calc.show();
 	}
 }
