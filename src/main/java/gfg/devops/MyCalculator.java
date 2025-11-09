@@ -22,6 +22,11 @@ public class MyCalculator {
 	{
 		return a%b;
 	}
+	
+	public void show()
+	{
+		System.out.println("Master Branch");
+	}
 
 	public static void main(String[] args) {
 		
